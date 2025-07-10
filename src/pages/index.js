@@ -103,6 +103,24 @@ const IndexPage = () => {
       <p className='text-end mt-4 text-muted small'>*Last updated on: Nov 2022</p>
 
     </div>
+
+    <section className="citation-section py-5">
+          <div className="container">
+            <div className="citation-box p-4">
+              <h2 className="mb-3">How to cite:</h2>
+              <p>
+                Pedro M. Martins, Lucianna H. Santos, Diego Mariano, Fellipe C. Queiroz, Luana L. Bastos, Isabela de S. Gomes,
+                Pedro H. C. Fischer, Rafael E. O. Rocha, Sabrina A. Silveira, Leonardo H. F. de Lima,
+                Mariana T. Q. de Magalhães, Maria C. A. Oliveira & Raquel C. de Melo-Minardi (2021).{' '}
+                <Link to="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03881-z">
+                  Propedia: a database for protein-peptide identification based on a hybrid clustering algorithm.
+                </Link>{' '}
+                BMC Bioinformatics, 22(1), 1-20.
+              </p>              
+            </div>
+          </div>
+        </section>
+        
       </main>
     </div>
   );

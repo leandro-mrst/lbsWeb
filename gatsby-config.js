@@ -14,7 +14,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images/`, // <--- ESTE CAMINHO DEVE APONTAR PARA A PASTA ONDE SEU logo_propedia.svg ESTÁ!
+        path: `${__dirname}/src/images/`,
       },
     },
   ],
