@@ -203,3 +203,15 @@ p {
   color: #0056b3; 
   text-decoration: underline;
 }
+.dataset-icon {
+  font-size: 5rem;
+  color: grey !important;
+  margin-right: 15px; 
+  flex-shrink: 0; 
+}
+.dataset-name {
+  text-align: center;
+}
+.dataset-db-name {
+  text-align: center;
+}

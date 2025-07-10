@@ -1,6 +1,6 @@
-import * as React from 'react'; // React is correctly imported 
-import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap CSS imported
-import { Link } from 'gatsby'; // Link component from Gatsby imported
+import * as React from 'react'; 
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image'
 import '../pages/style.css';
 
