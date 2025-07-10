@@ -41,4 +41,5 @@ const MenuBar = () => {
     </div>
   );
 };
-export default MenuBar
+
+export { MenuBar };
