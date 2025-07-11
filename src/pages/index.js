@@ -204,10 +204,10 @@ const IndexPage = () => {
          
 <div className="table-container-styled table-responsive mb-5"> 
    <h1 className="mb-4">Complex samples</h1>
-    <table className="table table-hover table-striped"> {/* Classes Bootstrap para estilo da tabela */}
-        <thead className="table-dark"> {/* Cabeçalho da tabela com fundo escuro */}
+    <table className="table table-hover table-striped"> 
+        <thead className="table-dark"> 
             <tr>
-                <th scope="col">Complex<sup className="text-danger">*</sup></th> {/* Superescrito para o asterisco */}
+                <th scope="col">Complex<sup className="text-danger">*</sup></th> 
                 <th scope="col">Peptide size</th>
                 <th scope="col">Receptor size</th>
                 <th scope="col">Resolution (Å)</th>
@@ -240,8 +240,7 @@ const IndexPage = () => {
                 <td></td> {/* Célula vazia, como na imagem */}
             </tr>
             <tr>
-                <td><Link to="#">2b9i-C-A</Link> <FontAwesomeIcon icon={faStar} className="text-warning" /></td> {/* Ícone de estrela amarela */}
-                <td>11</td>
+                <td><Link to="#">2b9i-C-A</Link> <FontAwesomeIcon icon={faStar} className="text-warning" /></td> 
                 <td>339</td>
                 <td>2.3</td>
                 <td>CRYSTAL STRUCTURE OF FUS3 WITH A DOCKING MOTIF FROM FAR1</td>
