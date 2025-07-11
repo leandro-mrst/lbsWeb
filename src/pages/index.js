@@ -337,7 +337,7 @@ const IndexPage = () => {
 export const Head = () =>
   <>
   <title>Propedia</title>
-  <link rel="icon" href="../images/logo_propedia.svg" /> 
+  <link rel="icon" href="/logo_propedia.svg" /> 
   </> 
 
 
