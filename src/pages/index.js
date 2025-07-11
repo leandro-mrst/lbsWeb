@@ -3,10 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'gatsby'; 
 import { StaticImage } from 'gatsby-plugin-image'
 import './style.css';
-import { MenuBar } from '../components/layout.js'
+import { MenuBar, FooterPage } from '../components/layout.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { PolarArea } from 'react-chartjs-2';
-import { chartData, chartOptions } from './graph.js';
+import { chartData, chartOptions } from '../utils/chart-config.js';
 
 
 
@@ -201,6 +201,11 @@ const IndexPage = () => {
           </div>
         </section>
       </main>
+
+
+      <footer>
+        <FooterPage></FooterPage>
+      </footer>
     </div>
   );
 };

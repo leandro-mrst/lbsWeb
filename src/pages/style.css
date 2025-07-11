@@ -160,7 +160,6 @@ p {
   margin-top: 0; 
   text-decoration: underline; 
 }
-/* style.css (ou citation-section.css) */
 
 .citation-section {
   background-color: #f8f9fa; 
@@ -214,4 +213,33 @@ p {
 }
 .dataset-db-name {
   text-align: center;
+}
+.main-footer {
+  background-color: #343a40;
+  color: #f8f9fa; 
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.main-footer .lbs-info {
+    text-align: left; 
+
+}
+
+.main-footer .lbs-info h3 {
+  color: #f8f9fa;
+}
+
+.main-footer .lbs-info p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 0.2rem;
+}
+
+.main-footer .lbs-info a {
+  color: #f8f9fa;
+  text-decoration: underline;
+}
+body {
+  margin: 0;
+  padding: 0;
 }
