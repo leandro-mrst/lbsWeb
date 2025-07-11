@@ -7,6 +7,7 @@ import { MenuBar, FooterPage } from '../components/layout.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { PolarArea } from 'react-chartjs-2';
 import { chartData, chartOptions } from '../utils/chart-config.js';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -200,9 +201,133 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
+         
+<div className="table-container-styled table-responsive mb-5"> 
+   <h1 className="mb-4">Complex samples</h1>
+    <table className="table table-hover table-striped"> {/* Classes Bootstrap para estilo da tabela */}
+        <thead className="table-dark"> {/* Cabeçalho da tabela com fundo escuro */}
+            <tr>
+                <th scope="col">Complex<sup className="text-danger">*</sup></th> {/* Superescrito para o asterisco */}
+                <th scope="col">Peptide size</th>
+                <th scope="col">Receptor size</th>
+                <th scope="col">Resolution (Å)</th>
+                <th scope="col">Protein Name</th>
+                <th scope="col">Classification</th>
+                <th scope="col">Clusters</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><Link to="#">1eez-C-A</Link></td>
+                <td>9</td>
+                <td>275</td>
+                <td>2.3</td>
+                <td>CRYSTAL STRUCTURE DETERMINATION OF HLA-A2.1 COMPLEXED TO GP2 PEPTIDE VARIANT(D2,V5L)</td>
+                <td>IMMUNE SYSTEM</td>
+                <td>
+                    <span className="badge bg-success me-1">Cluster S67</span><br/>
+                    <span className="badge bg-danger me-1">Cluster I0</span><br/>
+                    <span className="badge bg-primary">Cluster B6</span>
+                </td>
+            </tr>
+            <tr>
+                <td><Link to="#">1qyb-E-A</Link></td>
+                <td>5</td>
+                <td>122</td>
+                <td>1.9</td>
+                <td>NITY POINT MUTANT OF YWTE2 BOUND TO FXFG NUCLEOPORIN REPEAT</td>
+                <td>NUCLEAR TRANSPORT</td>
+                <td></td> {/* Célula vazia, como na imagem */}
+            </tr>
+            <tr>
+                <td><Link to="#">2b9i-C-A</Link> <FontAwesomeIcon icon={faStar} className="text-warning" /></td> {/* Ícone de estrela amarela */}
+                <td>11</td>
+                <td>339</td>
+                <td>2.3</td>
+                <td>CRYSTAL STRUCTURE OF FUS3 WITH A DOCKING MOTIF FROM FAR1</td>
+                <td>TRANSFERASE</td>
+                <td>
+                    <span className="badge bg-success me-1">Cluster S967</span><br/>
+                    <span className="badge bg-danger me-1">Cluster I245</span><br/>
+                    <span className="badge bg-primary">Cluster B35</span>
+                </td>
+            </tr>
+            <tr>
+                <td><Link to="#">2e7i-P-F</Link></td>
+                <td>9</td>
+                <td>175</td>
+                <td>2.5</td>
+                <td>STRUCTURE OF A HIGH-AFFINITY MUTANT OF THE 2C TCR IN COMPLEX WITH LDLQ/L9</td>
+                <td>IMMUNE SYSTEM</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><Link to="#">2w3o-D-B</Link></td>
+                <td>8</td>
+                <td>103</td>
+                <td>1.9</td>
+                <td>CRYSTAL STRUCTURE OF THE HUMAN PWWP FHA DOMAIN IN COMPLEX WITH AN KRCC1 DERIVED PHOSPHOPEPTIDE</td>
+                <td>HYDROLASE/TRANSFERASE/PEPTIDE</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><Link to="#">3uxq-B-A</Link> <FontAwesomeIcon icon={faStar} className="text-warning" /></td>
+                <td>16</td>
+                <td>168</td>
+                <td>1.9</td>
+                <td>CRYSTAL STRUCTURE OF RPXANK</td>
+                <td>TRANSCRIPTION</td>
+                <td>
+                    <span className="badge bg-success me-1">Cluster S424</span><br/>
+                    <span className="badge bg-danger me-1">Cluster I173</span><br/>
+                    <span className="badge bg-primary">Cluster B175</span>
+                </td>
+            </tr>
+            <tr>
+                <td><Link to="#">4ub0-a-d</Link></td>
+                <td>40</td>
+                <td>354</td>
+                <td>2.0</td>
+                <td>NATIVE STRUCTURE OF PHOTOSYSTEM II (DATASET-2) BY A FEMTOSECOND X-RAY LASER</td>
+                <td>ELECTRON TRANSPORT, PHOTOSYNTHESIS</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><Link to="#">4wvt-D-A</Link></td>
+                <td>6</td>
+                <td>80</td>
+                <td>2.0</td>
+                <td>CRYSTAL STRUCTURE OF KAP-BRD2 DOMAIN COMPLEXED WITH LIGAND BOUND</td>
+                <td>APOPTOSIS</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><Link to="#">4y70-A-Y</Link></td>
+                <td>4</td>
+                <td>213</td>
+                <td>2.4</td>
+                <td>Yeast 20S PROTEASOME in complex with AC-LAV-EP</td>
+                <td>HYDROLASE/HYDROLASE INHIBITOR</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><Link to="#">5crn-C-A</Link> <FontAwesomeIcon icon={faStar} className="text-warning" /></td>
+                <td>17</td>
+                <td>357</td>
+                <td>2.0</td>
+                <td>CRYSTAL STRUCTURE OF THE BRD DOMAIN OF HD-PTP IN A COMPLEX WITH THE CORE REGION OF STAM2</td>
+                <td>PROTEIN TRANSPORT</td>
+                <td>
+                    <span className="badge bg-success me-1">Cluster S312</span><br/>
+                    <span className="badge bg-danger me-1">Cluster I407</span><br/>
+                    <span className="badge bg-primary">Cluster B227</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
       </main>
-
-
+                
       <footer>
         <FooterPage></FooterPage>
       </footer>

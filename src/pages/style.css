@@ -243,3 +243,19 @@ body {
   margin: 0;
   padding: 0;
 }
+.table-container-styled {
+  
+  margin: auto;
+  width: 80%; 
+  border: 2px solid #5cb85c; 
+  border-radius: 8px;
+  background-color: white; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px; 
+}
+
+
+.table-container-styled .table {
+    padding: 0; 
+    margin-bottom: 0; 
+}
